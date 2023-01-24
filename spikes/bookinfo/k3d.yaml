@@ -10,27 +10,6 @@ ports:
 - port: 30080:30080 # Ngsa NodePort
   nodeFilters:
   - server:0
-- port: 30081:30081 # Burst Service NodePort
-  nodeFilters:
-  - server:0
-- port: 30082:30082 # Prometheus NodePort
-  nodeFilters:
-  - server:0
-- port: 30083:30083 # Ngsa plus NodePort
-  nodeFilters:
-  - server:0
-- port: 30084:30084 # Ngsa std NodePort
-  nodeFilters:
-  - server:0
-- port: 30085:30085 # Kiali NodePort
-  nodeFilters:
-  - server:0
-- port: 30086:30086 # Jaeger NodePort
-  nodeFilters:
-  - server:0
-- port: 30087:30087 # Grafana NodePort
-  nodeFilters:
-  - server:0
 - port: 30000:80 # Istio IngressGateway LoadBalancer NodePort
   nodeFilters:
   - loadbalancer

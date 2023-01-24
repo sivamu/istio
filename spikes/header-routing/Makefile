@@ -45,13 +45,16 @@ all : delete
 	@kubectl apply -f ./deploy/istio-routing.yaml
 
 	# deploy kiali dashboard
-	@kubectl apply -f ./deploy/kiali.yaml
+	@kubectl apply -f ./deploy/kiali-new.yaml
 
 	# deploy jaeger tracing
 	@kubectl apply -f ./deploy/jaeger.yaml
 
 	# deploy prometheus for istio
 	@kubectl apply -f ./deploy/prometheus.yaml
+
+	# deploy grafana for istio
+	@kubectl apply -f ./deploy/grafana.yaml
 
 test-all : test-standard test-plus test-base
 
